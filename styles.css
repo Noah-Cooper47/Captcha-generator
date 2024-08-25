@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+  }
+  
+  .captcha-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .captcha-image {
+    margin-bottom: 20px;
+  }
+  
+  .captcha-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #6e8efb;
+    outline: none;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  button#refresh-captcha {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  button#verify-captcha {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result-message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .result-message.success {
+    color: green;
+  }
+  
+  .result-message.error {
+    color: red;
+  }
+  
+  .captcha-container.dynamic {
+    background-color: #f7f7f7;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .captcha-image.dynamic img {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  button.dynamic {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  button.dynamic:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
